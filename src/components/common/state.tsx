@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { AlertTriangle, Loader2, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -46,7 +47,7 @@ export function ErrorState({ title = "Something went wrong", message, onRetry }:
 interface EmptyStateProps {
   title: string;
   message: string;
-  action?: React.ReactNode;
+  action?: ReactNode;
 }
 
 export function EmptyState({ title, message, action }: EmptyStateProps) {
